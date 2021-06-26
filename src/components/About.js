@@ -13,10 +13,10 @@ export const About = ({ id }) => {
           <div className='about-inner'>
             <p className="intro">
             Greetings Folks, My name is Nirzal Mahat.
-            I’m 20 Years of age. 
+            I’m 20 years of age. 
             I have a serious passion for WebDevelopment and Coding as a whole.
-            My fields of expertise includes UI/UX Design, Frontend Development, Backend Development, Database Management and Graphics Designing.
-            My speciality you ask? I can convert your dream into a reality.
+            My fields of expertise include UI/UX Design, Frontend Development, Backend Development, Database Management and Graphics Designing.
+            My speciality you ask? I can convert your dream project into a reality.
 {" "}
             </p>
             <div className='extra-about-info'>
