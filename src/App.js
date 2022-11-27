@@ -14,10 +14,10 @@ function App() {
       <Navbar />
       <Hero />
       <About id="about" />
-      {/* <Services id="services" />
-          <Skills id="skills" />
-          <Portfolio id="portfolio" />
-          <Contact /> */}
+      <Services id="services" />
+      <Skills id="skills" />
+      {/* <Portfolio id="portfolio" /> */}
+      {/* <Contact /> */}
     </div>
   );
 }
