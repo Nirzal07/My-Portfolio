@@ -51,13 +51,13 @@ export const Skills = ({ id }) => {
     <section>
       <SectionTitle title="Skills" />
       {Object.entries(skills).map(([key, value], index) => (
-        <div className="flex mb-4 gap-x-8 w-full items-center justify-between">
-          <h4 className="font-semibold w-fit flex items-center justify-center rounded-lg text-[24px] bg-secondaryBg text-white w-[250px] h-[180px]">
+        <div className="flex flex-col md:flex-row gap-y-2 mb-16 md:mb-4 gap-x-8 w-full items-center justify-between">
+          <h4 className="font-semibold w-full flex items-center justify-center rounded-lg text-[24px] bg-secondaryBg text-white md:w-[250px] md:h-[180px] h-[140px]">
             {key}
           </h4>
-          <div className="flex rounded-lg w-full bg-secondaryBg/50 h-[180px] items-center justify-around">
+          <div className="grid md:grid-cols-4 py-8 md:py-2 gap-y-8 rounded-lg w-full bg-secondaryBg/50 md:h-[180px] h-[680px] items-center justify-center md:justify-around">
             {value.map((item, index) => (
-              <div className="w-[150px]">
+              <div className="md:w-[150px]">
                 <img
                   src={item[0]}
                   className="h-[80px] object-contain mb-2 mx-auto"

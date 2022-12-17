@@ -23,7 +23,7 @@ export const Portfolio = ({ id }) => {
     <section className="portfolio">
       <SectionTitle title="Projects" />
 
-      <div className="grid grid-cols-3 gap-y-8 gap-x-4">
+      <div className="grid md:grid-cols-3 gap-y-8 gap-x-4">
         {portfolios.map((portfolio, index) => (
           <div className="hover:-translate-y-2 duration-300">
             <a target="_blank" className="hover:text-white" href={portfolio[1]}>

@@ -46,11 +46,11 @@ export const Services = ({ id }) => {
                 className="rounded-t-xl p-1"
               />
 
-              <div className="px-8 pt-4 mb-12">
-                <h3 className="text-white font-semibold text-[30px] mb-3">
+              <div className=" px-2 md:px-8 pt-4 mb-12">
+                <h3 className="text-white font-semibold text-[26px] md:text-[30px] mb-3">
                   {service.title}
                 </h3>
-                <p className="text-[18px] font-normal text-white/80">
+                <p className="text-[17px] md:text-[18px] font-normal text-white/80">
                   {service.desc}
                 </p>
               </div>
