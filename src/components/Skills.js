@@ -19,6 +19,8 @@ import firebase from "../img/skills/firebase.png";
 import SectionTitle from "./Common/SectionTitle";
 
 export const Skills = ({ id }) => {
+  // add web3 like Hardhat, ethersjs, web3js
+
   const skills = {
     Languages: [
       [js, "Javascript"],

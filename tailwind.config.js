@@ -19,6 +19,7 @@ module.exports = {
       // },
       colors: {
         green: "#00FFA3",
+        text: "#e0e0e0",
         primaryBg: "#1E1E1E",
         secondaryBg: "#201F1F",
         secondary: "#FFA400",

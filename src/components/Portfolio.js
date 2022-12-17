@@ -7,58 +7,34 @@ import kaamxa from "../img/kaamxa.jpg";
 import h2h from "../img/h2h.jpg";
 import freelancing from "../img/freelancing.jpg";
 import bhumi from "../img/bhumi.jpg";
-import techwizz from "../img/techwizz.jpg";
 import idea from "../img/idea.PNG";
+import SectionTitle from "./Common/SectionTitle";
+import lamaandweidt from "../img/portfolio/lamaandweidt.png";
+import hearttoheart from "../img/portfolio/hearttoheart.png";
+import techwizz from "../img/portfolio/techwizz.png";
 
 export const Portfolio = ({ id }) => {
+  const portfolios = [
+    ["L&W Consulting", "https://lamaweidt-consulting.com", lamaandweidt],
+    ["Heart to Heart Health Care", "https://hearttoheart.com.np", hearttoheart],
+    ["Techwizz", "https://techwizz.netlify.app", techwizz],
+  ];
   return (
-    <>
-      <p className="section-title" id={id}>
-        My Portfolio
-      </p>
+    <section className="portfolio">
+      <SectionTitle title="Projects" />
 
-      <section className="portfolio">
-        <div className="portfolio-inner">
-          <a target="_blank" href="https://freelancing-three.vercel.app/">
-            <div className="each-portfolio">
-              <img src={freelancing} className="portfolio-image" />
-              <p className="portfolio-title"> Freelancing Website </p>
-            </div>
-          </a>
-          <a target="_blank" href="https://kaamxa.netlify.app/">
-            <div className="each-portfolio">
-              <img src={kaamxa} className="portfolio-image" />
-              <p className="portfolio-title"> Job Portal </p>
-            </div>
-          </a>
-          <a target="_blank" href="https://techwizz.netlify.app/">
-            <div className="each-portfolio">
-              <img src={techwizz} className="portfolio-image" />
-              <p className="portfolio-title"> Web Dev Agency </p>
-            </div>
-          </a>
-        </div>
-        <div className="portfolio-inner">
-          <a target="_blank" href="https://idea100studios.com/">
-            <div className="each-portfolio">
-              <img src={studio} className="portfolio-image" />
-              <p className="portfolio-title"> Production House </p>
-            </div>
-          </a>
-          <a target="_blank" href="https://hearttoheart.com.np/">
-            <div className="each-portfolio">
-              <img src={h2h} className="portfolio-image" />
-              <p className="portfolio-title"> Healthcare </p>
-            </div>
-          </a>
-          <a target="_blank" href="https://bhumisuppliers.com.np/">
-            <div className="each-portfolio">
-              <img src={bhumi} className="portfolio-image" />
-              <p className="portfolio-title"> Machinary Production </p>
-            </div>
-          </a>
-        </div>
-      </section>
-    </>
+      <div className="grid grid-cols-3 gap-y-8 gap-x-4">
+        {portfolios.map((portfolio, index) => (
+          <div className="hover:-translate-y-2 duration-300">
+            <a target="_blank" className="hover:text-white" href={portfolio[1]}>
+              <img src={portfolio[2]} className="rounded-lg" />
+              <p className="font-medium mt-2 text-[22px] text-white text-center">
+                {portfolio[0]}
+              </p>
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };

@@ -11,12 +11,12 @@ import { Portfolio } from "./components/Portfolio";
 function App() {
   return (
     <div className="container">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
-      <About id="about" />
-      <Services id="services" />
-      <Skills id="skills" />
-      {/* <Portfolio id="portfolio" /> */}
+      <About />
+      <Services />
+      <Skills />
+      <Portfolio />
       {/* <Contact /> */}
     </div>
   );
